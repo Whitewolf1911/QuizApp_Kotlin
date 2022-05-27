@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
             else{
                 //create intent for your other activity
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
-
                 //pass your intent to startActivity to move on
                 startActivity(intent)
                 //Close the activity
