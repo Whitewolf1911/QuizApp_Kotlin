@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
             else{
                 //create intent for your other activity
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
+
+                //Passing the data to another activity name,value format !
+                intent.putExtra(Constants.USER_NAME, etName.text.toString())
+
                 //pass your intent to startActivity to move on
                 startActivity(intent)
                 //Close the activity
